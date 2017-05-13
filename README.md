@@ -20,4 +20,4 @@ Minesweeper Example on Angular
 -Superman mode that reveals the location of the flags
 
 ### Working Example:
-Here :
+Here : https://yakirzana.github.io/minesweeper/
