@@ -1,20 +1,28 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule }    from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { AppComponent }        from './components/app.component';
+import { SettingsComponent } from './components/settings.component';
+import { GameComponent } from './components/game.component';
+import { SettingsService } from './settings.service';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
+  imports:      [
     BrowserModule,
     FormsModule,
-    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    GameComponent,
+    SettingsComponent,
+  ],
+  providers: [
+    SettingsService
+  ],
+  bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+
+export class AppModule {
+}

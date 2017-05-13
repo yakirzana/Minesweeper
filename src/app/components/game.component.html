@@ -1,0 +1,20 @@
+<h2>Minesweeper Game</h2>
+<div id="control">
+  <button (click)="startNewGame()">Start New Game</button>
+  Flags: {{remainingFlags}}
+</div>
+<div id="game">
+  <table class="table table-striped">
+    <tr *ngFor="let row of cells">
+      <td *ngFor="let cell of row"
+          [class.clicked]="cell.isClick"
+          [class.flagged]="cell.isFlag"
+          (click)="selectCell(cell, $event)" >
+          <div [hidden]="!this.needToShowText(cell)">
+            <span [hidden]="!cell.isMines"> <i class="fa fa-bomb" aria-hidden="true"></i></span>
+            <span [hidden]="cell.isMines"> {{cell.getValueToPrint()}}</span>
+          </div>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,26 @@
+settingsContent {
+  vertical-align: middle;
+}
+label {
+  display: inline-block;
+  margin: 1em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding: auto 2em 0 2em;
+  margin: 0 .5em 0 .5em;
+}
+input[type="checkbox"]{
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+input[type="checkbox"]:focus{
+  outline:0;
+}

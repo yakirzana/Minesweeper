@@ -1,0 +1,11 @@
+<h2>Settings</h2>
+<div id="settingsContent">
+  <label>Width: </label>
+  <input type="number" min="1" max="{{settings.getMaxSize()}}" [(ngModel)]="settings.width" placeholder="width" />
+  <label>Weight: </label>
+  <input type="number" min="1" max="{{settings.getMaxSize()}}" [(ngModel)]="settings.height" placeholder="height" />
+  <label>Mines: </label>
+  <input type="number" min="1" max="{{settings.width * settings.height}}" [(ngModel)]="settings.mines" placeholder="mines" />
+  <label>SuperMan Mod: </label>
+  <input type="checkbox" [(ngModel)]="settings.isSuperManMode">
+</div>

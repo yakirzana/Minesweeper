@@ -1,0 +1,33 @@
+td {
+  margin-top: 20px;
+  font-family: Arial;
+  width: 2em;
+  height: 2em;
+  background-color: #eedeb9;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+td:hover {
+  background-color: #eed06c;
+}
+
+td.clicked {
+  background-color: #7cb4ee;
+}
+
+td.flagged {
+  background-color: #ee9486;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 5px;
+}
+
+game {
+  padding-top: 2em;
+}
